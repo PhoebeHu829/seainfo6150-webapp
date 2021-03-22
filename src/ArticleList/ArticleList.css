@@ -1,0 +1,20 @@
+section {
+  box-shadow: 0 0 20px grey;
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App > section {
+  border-style: dashed;
+  border-color: grey;
+  box-shadow: 0 0 20px #f08080;
+  background-color: #d3d3d3;
+}
+
+section ul {
+  list-style-type: none;
+}

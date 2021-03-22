@@ -1,0 +1,15 @@
+h2 {
+  margin: 15px;
+}
+
+h2 a {
+  color: red;
+}
+
+ul section {
+  background-image: linear-gradient(to right, #f08080, white 25%);
+}
+
+ul {
+  padding-right: 40px;
+}

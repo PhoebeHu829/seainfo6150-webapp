@@ -1,0 +1,19 @@
+.info.hidden {
+  display: none;
+}
+
+.info {
+  margin: 15px;
+}
+
+.info time {
+  font-weight: bold;
+}
+
+button {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  border-radius: 12px;
+  margin: 10px;
+}

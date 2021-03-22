@@ -1,0 +1,19 @@
+article {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article > div {
+  border-style: dashed;
+  box-shadow: 0 0 15px #f08080;
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 20px;
+}
+
+article > a {
+  color: red;
+  font-weight: bold;
+  margin: 20px;
+  font-size: 25px;
+}
