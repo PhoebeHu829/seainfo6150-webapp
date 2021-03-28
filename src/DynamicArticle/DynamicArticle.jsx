@@ -11,11 +11,14 @@ const DynamicArticle = (props) => {
     displayDate,
     timeStamp,
     text,
+    image,
   } = props.article;
+  const url = image._url;
   return (
     <article>
       <Link to={'/articlelist'}> Back </Link>
       <div>
+        <img src={url} alt={title}></img>
         <header>
           <h1>{title}</h1>
           <address>

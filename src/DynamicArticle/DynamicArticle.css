@@ -15,5 +15,16 @@ article > a {
   color: red;
   font-weight: bold;
   margin: 20px;
-  font-size: 25px;
+  font-size: 20px;
+}
+
+img {
+  border-radius: 90%;
+  border-style: solid;
+  border-width: 8px;
+  border-color: red;
+  box-shadow: 0 10px 10px #888888;
+  height: 120px;
+  width: 200px;
+  margin-bottom: 30px;
 }
