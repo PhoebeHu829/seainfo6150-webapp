@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import styles from "./ArticleListItem.module.css";
-import ArticleTextToggleButton from "../ArticleTextToggleButton/ArticleTextToggleButton.jsx";
-import ArticleImage from "../ArticleImage/ArticleImage.jsx";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import styles from './ArticleListItem.module.css';
+import ArticleTextToggleButton from '../ArticleTextToggleButton/ArticleTextToggleButton.jsx';
+import ArticleImage from '../ArticleImage/ArticleImage.jsx';
 
 const ArticleListItem = (props) => {
   const [isTextShowing, setIsTextShowing] = useState(false);
@@ -14,11 +14,12 @@ const ArticleListItem = (props) => {
 
   return (
     <li className={styles.container}>
-      <article className={styles.article}>
+      <div className={styles.picTitle}>
         <ArticleImage
           url={props.article.image._url}
           title={props.article.title}
         />
+
         <div className={styles.wrapper}>
           <h2 className={styles.title}>
             <Link
@@ -28,20 +29,21 @@ const ArticleListItem = (props) => {
               {props.article.title}
             </Link>
           </h2>
-          {isTextShowing && (
-            <div className={styles.text}>
-              <time className={styles.time} dateTime={props.article.timeStamp}>
-                {props.article.displayDate}
-              </time>
-              <p>{props.article.shortText}</p>
-            </div>
-          )}
         </div>
-        <ArticleTextToggleButton
-          buttonText={isTextShowing ? "Show less" : "Show more"}
-          onClick={onClick}
-        />
-      </article>
+      </div>
+      {isTextShowing && (
+        <div className={styles.text}>
+          <time className={styles.time} dateTime={props.article.timeStamp}>
+            {props.article.displayDate}
+          </time>
+          <p>{props.article.shortText}</p>
+        </div>
+      )}
+
+      <ArticleTextToggleButton
+        buttonText={isTextShowing ? 'Show less' : 'Show more'}
+        onClick={onClick}
+      />
     </li>
   );
 };
