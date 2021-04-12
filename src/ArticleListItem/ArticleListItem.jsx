@@ -6,6 +6,7 @@ import ArticleTextToggleButton from '../ArticleTextToggleButton/ArticleTextToggl
 import ArticleImage from '../ArticleImage/ArticleImage.jsx';
 
 const ArticleListItem = (props) => {
+  //console.log(props);
   const [isTextShowing, setIsTextShowing] = useState(false);
 
   function onClick() {

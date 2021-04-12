@@ -4,6 +4,7 @@ import styles from "./ArticleList.module.css";
 import ArticleListItem from "../ArticleListItem/ArticleListItem.jsx";
 
 const ArticleList = (props) => {
+  //console.log(props);
   return (
     <div>
       <ul className={styles.container}>
@@ -16,6 +17,6 @@ const ArticleList = (props) => {
 };
 
 ArticleList.propTypes = {
-    articles: PropTypes.array.isRequired
+  articles: PropTypes.array.isRequired
 }
 export default ArticleList;

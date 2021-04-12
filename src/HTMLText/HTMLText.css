@@ -1,0 +1,21 @@
+.content {
+  column-count: 4;
+}
+
+@media only screen and (max-width: 1096px) {
+  .content {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .content {
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    column-count: 1;
+  }
+}

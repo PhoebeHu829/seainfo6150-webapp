@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import ArticleImage from "../ArticleImage/ArticleImage";
 
 const DynamicArticle = (props) => {
+  //console.log(props);
   return (
     <div>
       <Link to="/articlelist" className={styles.back}>
